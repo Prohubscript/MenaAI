@@ -1,200 +1,200 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mena Ai Chatbot</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-        .chat-container {
-            width: 100%;
-            max-width: 500px;
-            background: #1e1e1e;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            height: 80vh;
-            overflow: hidden;
-            position: relative;
-        }
-        /* Mena Ai Header */
-        .header {
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            animation: fadeIn 2s ease-out;
-        }
-        /* Animation for messages */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        .messages {
-            flex-grow: 1;
-            overflow-y: auto;
-            margin-bottom: 20px;
-            padding-right: 10px;
-            max-height: calc(100% - 100px);
-        }
-        .message {
-            background: #333;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            animation: fadeIn 0.5s ease-out;
-            word-wrap: break-word; /* Ensure long words break to the next line */
-            white-space: pre-wrap; /* Make sure long messages wrap to new lines */
-            max-width: 100%; /* Prevent text from overflowing */
-        }
-        .user-message {
-            background: #007bff;
-            color: white;
-        }
-        .mena-message {
-            background: #444;
-            color: white;
-        }
-        .input-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-top: 2px solid #333;
-            padding-top: 15px;
-        }
-        input {
-            flex: 1;
-            padding: 12px 15px;
-            font-size: 1rem;
-            border-radius: 8px;
-            border: 1px solid #333;
-            background: #2a2a2a;
-            color: white;
-            margin-right: 10px;
-            outline: none;
-        }
-        input:focus {
-            border-color: #007bff;
-        }
-        button {
-            padding: 12px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-        button:disabled {
-            background-color: #555;
-            cursor: not-allowed;
-        }
-        button:hover:not(:disabled) {
-            background-color: #0056b3;
-        }
-        @media (max-width: 600px) {
-            .chat-container {
-                padding: 20px;
-            }
-            input, button {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="chat-container">
-        <div class="header">Mena Ai</div>
-        <div class="messages" id="messages"></div>
-        <div class="input-container">
-            <input type="text" id="user-input" placeholder="Type a message...">
-            <button id="send-button" onclick="sendMessage()">Send</button>
-        </div>
-    </div>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Mariam Ai Chatbot</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #121212;  
+            color: white;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+            margin: 0;  
+            padding: 0;  
+        }  
+        .chat-container {  
+            width: 100%;  
+            max-width: 500px;  
+            background: #1e1e1e;  
+            border-radius: 15px;  
+            padding: 30px;  
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  
+            display: flex;  
+            flex-direction: column;  
+            height: 80vh;  
+            overflow: hidden;  
+            position: relative;  
+        }  
+        /* Mariam Ai Header */  
+        .header {  
+            text-align: center;  
+            font-size: 1.8rem;  
+            font-weight: bold;  
+            color: #007bff;  
+            margin-bottom: 20px;  
+            text-transform: uppercase;  
+            letter-spacing: 2px;  
+            animation: fadeIn 2s ease-out;  
+        }  
+        /* Animation for messages */  
+        @keyframes fadeIn {  
+            0% {  
+                opacity: 0;  
+            }  
+            100% {  
+                opacity: 1;  
+            }  
+        }  
+        .messages {  
+            flex-grow: 1;  
+            overflow-y: auto;  
+            margin-bottom: 20px;  
+            padding-right: 10px;  
+            max-height: calc(100% - 100px);  
+        }  
+        .message {  
+            background: #333;  
+            padding: 12px;  
+            margin: 8px 0;  
+            border-radius: 8px;  
+            font-size: 1.1rem;  
+            animation: fadeIn 0.5s ease-out;  
+            word-wrap: break-word; /* Ensure long words break to the next line */  
+            white-space: pre-wrap; /* Make sure long messages wrap to new lines */  
+            max-width: 100%; /* Prevent text from overflowing */  
+        }  
+        .user-message {  
+            background: #007bff;  
+            color: white;  
+        }  
+        .mena-message {  
+            background: #444;  
+            color: white;  
+        }  
+        .input-container {  
+            display: flex;  
+            align-items: center;  
+            justify-content: space-between;  
+            border-top: 2px solid #333;  
+            padding-top: 15px;  
+        }  
+        input {  
+            flex: 1;  
+            padding: 12px 15px;  
+            font-size: 1rem;  
+            border-radius: 8px;  
+            border: 1px solid #333;  
+            background: #2a2a2a;  
+            color: white;  
+            margin-right: 10px;  
+            outline: none;  
+        }  
+        input:focus {  
+            border-color: #007bff;  
+        }  
+        button {  
+            padding: 12px 20px;  
+            background: #007bff;  
+            color: white;  
+            border: none;  
+            cursor: pointer;  
+            border-radius: 8px;  
+            font-size: 1rem;  
+            transition: background-color 0.3s;  
+        }  
+        button:disabled {  
+            background-color: #555;  
+            cursor: not-allowed;  
+        }  
+        button:hover:not(:disabled) {  
+            background-color: #0056b3;  
+        }  
+        @media (max-width: 600px) {  
+            .chat-container {  
+                padding: 20px;  
+            }  
+            input, button {  
+                font-size: 0.9rem;  
+            }  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="chat-container">  
+        <div class="header">Mariam Ai</div>  
+        <div class="messages" id="messages"></div>  
+        <div class="input-container">  
+            <input type="text" id="user-input" placeholder="Type a message...">  
+            <button id="send-button" onclick="sendMessage()">Send</button>  
+        </div>  
+    </div>  
 
-    <script>
-        let apiKey = "5ba4ca2ab81a3a3c97108f540b96fafd276a60d1292768f1dab4099db3bfb64c"; // Replace this with your Together AI API key
-        let chatHistory = [];  // Store conversation history
+    <script>  
+        let apiKey = "5ba4ca2ab81a3a3c97108f540b96fafd276a60d1292768f1dab4099db3bfb64c"; // Replace this with your Together AI API key  
+        let chatHistory = [];  // Store conversation history  
 
-        async function sendMessage() {
-            let inputField = document.getElementById("user-input");
-            let messageBox = document.getElementById("messages");
-            let sendButton = document.getElementById("send-button");
-            let userMessage = inputField.value;
+        async function sendMessage() {  
+            let inputField = document.getElementById("user-input");  
+            let messageBox = document.getElementById("messages");  
+            let sendButton = document.getElementById("send-button");  
+            let userMessage = inputField.value;  
 
-            if (!userMessage.trim()) return;
+            if (!userMessage.trim()) return;  
 
-            // Add user message to chat history
-            chatHistory.push({ role: "user", content: userMessage });
+            // Add user message to chat history  
+            chatHistory.push({ role: "user", content: userMessage });  
 
-            let userMessageElement = document.createElement("div");
-            userMessageElement.classList.add("message", "user-message");
-            userMessageElement.textContent = "You: " + userMessage;
-            messageBox.appendChild(userMessageElement);
-            inputField.value = "";
+            let userMessageElement = document.createElement("div");  
+            userMessageElement.classList.add("message", "user-message");  
+            userMessageElement.textContent = "You: " + userMessage;  
+            messageBox.appendChild(userMessageElement);  
+            inputField.value = "";  
 
-            sendButton.disabled = true; // Disable button while waiting for response
+            sendButton.disabled = true; // Disable button while waiting for response  
 
-            try {
-                // Make the API request with the full chat history
-                let response = await fetch("https://api.together.ai/v1/chat/completions", {  // Replace with actual Together AI URL
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Authorization": `Bearer ${apiKey}` // Ensure API Key is correct for Together AI
-                    },
-                    body: JSON.stringify({
-                        model: "meta-llama/Llama-3.3-70B-Instruct-Turbo",  // Model name you want to use
-                        messages: chatHistory  // Send entire conversation history
-                    })
-                });
+            try {  
+                // Make the API request with the full chat history  
+                let response = await fetch("https://api.together.ai/v1/chat/completions", {  // Replace with actual Together AI URL  
+                    method: "POST",  
+                    headers: {  
+                        "Content-Type": "application/json",  
+                        "Authorization": `Bearer ${apiKey}` // Ensure API Key is correct for Together AI  
+                    },  
+                    body: JSON.stringify({  
+                        model: "meta-llama/Llama-3.3-70B-Instruct-Turbo",  // Model name you want to use  
+                        messages: chatHistory  // Send entire conversation history  
+                    })  
+                });  
 
-                if (!response.ok) {
-                    throw new Error(`Error: ${response.status}`);
-                }
+                if (!response.ok) {  
+                    throw new Error(`Error: ${response.status}`);  
+                }  
 
-                let responseData = await response.json();
-                let botMessage = responseData.choices[0].message.content;
+                let responseData = await response.json();  
+                let botMessage = responseData.choices[0].message.content;  
 
-                // Add bot message to chat history
-                chatHistory.push({ role: "assistant", content: botMessage });
+                // Add bot message to chat history  
+                chatHistory.push({ role: "assistant", content: botMessage });  
 
-                let botMessageElement = document.createElement("div");
-                botMessageElement.classList.add("message", "mena-message");
-                botMessageElement.textContent = "Mena: " + botMessage;
-                messageBox.appendChild(botMessageElement);
-            } catch (error) {
-                console.error("Error:", error);
-                let errorElement = document.createElement("div");
-                errorElement.classList.add("message", "mena-message");
-                errorElement.textContent = "Mena: Sorry, something went wrong. " + error.message;
-                messageBox.appendChild(errorElement);
-            }
+                let botMessageElement = document.createElement("div");  
+                botMessageElement.classList.add("message", "mena-message");  
+                botMessageElement.textContent = "Mariam: " + botMessage; // Change from "Mena: " to "Mariam: "  
+                messageBox.appendChild(botMessageElement);  
+            } catch (error) {  
+                console.error("Error:", error);  
+                let errorElement = document.createElement("div");  
+                errorElement.classList.add("message", "mena-message");  
+                errorElement.textContent = "Mariam: Sorry, something went wrong. " + error.message; // Change from "Mena: " to "Mariam: "  
+                messageBox.appendChild(errorElement);  
+            }  
 
-            messageBox.scrollTop = messageBox.scrollHeight; // Scroll to the latest message
-            sendButton.disabled = false; // Re-enable the send button
-        }
-    </script>
-</body>
-</html>
+            messageBox.scrollTop = messageBox.scrollHeight; // Scroll to the latest message  
+            sendButton.disabled = false; // Re-enable the send button  
+        }  
+    </script>  
+</body>  
+</html>  
