@@ -162,7 +162,7 @@
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
-                        "Authorization": Bearer ${apiKey} // Ensure API Key is correct for Together AI
+                        "Authorization": `Bearer ${apiKey}` // Ensure API Key is correct for Together AI
                     },
                     body: JSON.stringify({
                         model: "meta-llama/Llama-3.3-70B-Instruct-Turbo",  // Model name you want to use
@@ -171,7 +171,7 @@
                 });
 
                 if (!response.ok) {
-                    throw new Error(Error: ${response.status});
+                    throw new Error(`Error: ${response.status}`);
                 }
 
                 let responseData = await response.json();
